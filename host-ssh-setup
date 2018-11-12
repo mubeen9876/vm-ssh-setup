@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ssh-keygen
+remote_host= input ("Input a remote host: ")
+remote_path= input ("Input a remote path: ")
+curl -u $(USER): --key ~/.ssh/id_rsa --pubkey ~/.ssh/id_rsa.pub sftp://<remote_host>/<remote_
+path>
